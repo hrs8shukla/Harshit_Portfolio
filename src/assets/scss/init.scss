@@ -1,0 +1,55 @@
+$enable-responsive-font-sizes: true !default;
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    // Variable Font
+    font-family: 'Roboto Mono';
+    src: url('/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    font-family: 'Roboto Mono';
+    color: white;
+}
+
+:root {
+    --backgound-color: #151515;
+    --nav-bg: #000000;
+    --green: #1ea044;
+
+    // calculate vh because it is broken in mobile.
+    --vh: 1vh;
+
+    // 60px = height of bottom nav
+    // 3rem = py-4 in top nav
+    // max(26px, calc(1rem + 1.5vw)) = height of logo
+    --mobile-full-height: calc(var(--vh) * 100 - 60px - 3rem - max(26px, calc(1rem + 1.5vw)));
+    --desktop-full-height: calc(100vh - 3rem - max(26px, calc(1rem + 1.5vw)));
+}
+
+body {
+    background: var(--backgound-color);
+}
+
+.curvy-bg {
+    &::after {
+        content: '';
+        background: url('/img/curvybg-1.svg');
+        display: block;
+        width: 100%;
+        height: calc(100vw * 7 / 80);
+        margin-top: 4rem;
+        background-repeat: no-repeat;
+        left: 0px;
+        top: 0px;
+        background-position: bottom;
+        background-size: contain;
+        z-index: -1;
+        filter: brightness(0);
+    }
+}
