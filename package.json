@@ -11,6 +11,8 @@
         "@fortawesome/fontawesome-free": "^5.14.0",
         "animate.css": "^4.1.1",
         "bootstrap": "^4.5.2",
+        "browserslist": "^4.23.3",
+        "caniuse-lite": "^1.0.30001655",
         "core-js": "^3.6.5",
         "emailjs-com": "^3.2.0",
         "register-service-worker": "^1.7.1",
