@@ -46,6 +46,7 @@ export default {
     padding-right: 2em;
     p {
         font-size: 0.8em;
+        color:white;
     }
 }
 .image {
