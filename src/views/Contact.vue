@@ -130,6 +130,9 @@ export default {
             // END Validation
 
             loading.value = true;
+            console.log('Project ID:', process.env.VUE_APP_PROJECT_ID);
+            console.log('Template ID:', process.env.VUE_APP_TEMPLATE_ID);
+            console.log('User ID:', process.env.VUE_APP_USER_ID);
 
             // Send email using EmailJS
             emailjs
