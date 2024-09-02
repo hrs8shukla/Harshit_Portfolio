@@ -41,9 +41,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     position: relative; /* Ensure proper stacking context */
-    z-index: 1; /* Ensure it is behind the navigation */
     img {
-        max-width: 100%;
+        max-width: 75%;
         height: auto;
         display: block; /* Remove extra space below image */
     }
