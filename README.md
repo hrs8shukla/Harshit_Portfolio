@@ -12,18 +12,18 @@ And it is deployed on [Netlify](https://www.netlify.com/) which requires just a 
 
 ```bash
 #install dependencies
-yarn install
+npm install
 
 # Compiles and hot-reloads for development
-yarn serve
+npm run serve
 
 # Compiles and minifies for production
-yarn build
+npm run build
 
 # Lints and fixes files
-yarn lint
+nom audit
 ```
 
 # Contact Form
 
-EmailJS is being used to forward the entries from Contact form to email.
+EmailJS is being used to forward the entries from Contact form to email. Environment variables for ProjectID , TemplateID , PublicID is to be set with credentials.
