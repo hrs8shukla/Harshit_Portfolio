@@ -9,11 +9,11 @@
         <router-link class="px-2" to="/works">
             <fa-icon icon="briefcase" type="fas" />
         </router-link>
-        <router-link class="px-2" to="/contact">
-            <fa-icon icon="envelope" type="fas" />
-        </router-link>
         <router-link class="px-2" to="/experience">
             <fa-icon icon="calendar" type="fas" />
+        </router-link>
+        <router-link class="px-2" to="/contact">
+            <fa-icon icon="envelope" type="fas" />
         </router-link>
     </nav>
 </template>

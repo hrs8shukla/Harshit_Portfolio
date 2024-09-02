@@ -92,9 +92,8 @@ export default {
         function copyToClipboard(text, type) {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text);
-                let message =
-                    type === 'email' ? { message: `Email ID copied to clipboard`, icon: 'at', iconType: 'fas' } : null;
-                this.$success(message);
+                let message = type === 'email' ? `Email ID copied to clipboard` : null;
+                alert(message); // Replace this with your notification method if you have one
             }
         }
 
@@ -125,15 +124,12 @@ export default {
                 : 'Too short.';
 
             if (errors.value.name || errors.value.email || errors.value.message) {
-                return this.$error('All Fields Required.');
+                alert('All Fields Required.'); // Replace this with your notification method if you have one
+                return;
             }
             // END Validation
 
             loading.value = true;
-            console.log('Project ID:', process.env.VUE_APP_PROJECT_ID);
-            console.log('Template ID:', process.env.VUE_APP_TEMPLATE_ID);
-            console.log('User ID:', process.env.VUE_APP_USER_ID);
-
             // Send email using EmailJS
             emailjs
                 .send(
@@ -147,15 +143,15 @@ export default {
                     process.env.VUE_APP_USER_ID
                 )
                 .then(response => {
-                    console.log('EmailJS Response:', response); // Log response for debugging
-                    this.$success('Message sent successfully!');
+                    console.log('EmailJS Response:', response);
+                    alert('Message sent successfully!');
                     name.value = '';
                     email.value = '';
                     message.value = '';
                 })
                 .catch(error => {
-                    console.error('EmailJS Error:', error); // Log the full error message
-                    this.$error('Failed to send message. Please check the console for more details.');
+                    console.error('EmailJS Error:', error);
+                    alert('Failed to send message. Please check the console for more details.');
                 })
                 .finally(() => {
                     loading.value = false;

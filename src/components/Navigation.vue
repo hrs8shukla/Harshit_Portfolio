@@ -7,8 +7,8 @@
             <router-link class="px-2" to="/about">About</router-link>
             <router-link class="px-2" to="/skills">Skills</router-link>
             <router-link class="px-2" to="/works">Works</router-link>
-            <router-link class="px-2" to="/contact">Contact</router-link>
             <router-link class="px-2" to="/experience">Experience</router-link>
+            <router-link class="px-2" to="/contact">Contact</router-link>
         </div>
     </nav>
 </template>
