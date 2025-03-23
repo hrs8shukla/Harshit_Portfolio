@@ -40,6 +40,7 @@ export default {
                         'Taking ownership of critical backend services, optimizing performance, and enhancing system scalability to support business growth.',
                         'Collaborating cross-functionally with frontend, DevOps, and product teams to streamline workflows and improve integration efficiency.',
                         'Driving innovation by implementing best practices in API development, improving maintainability, and ensuring high availability of integration services.'
+                    ]
                 },
                 {
                     title: 'Associate Software Engineer',
