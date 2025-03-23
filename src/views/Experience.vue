@@ -31,10 +31,21 @@ export default {
         return {
             experiences: [
                 {
+                    title: 'Software Engineer',
+                    company: 'SHL India Pvt. Ltd',
+                    location: 'Gurugram',
+                    date: 'Mar 2025 - Present',
+                    details: [
+                        'Leading key initiatives within the Integrations team, driving backend development and ensuring seamless integration with major ATS and client systems.',
+                        'Taking ownership of critical backend services, optimizing performance, and enhancing system scalability to support business growth.',
+                        'Collaborating cross-functionally with frontend, DevOps, and product teams to streamline workflows and improve integration efficiency.',
+                        'Driving innovation by implementing best practices in API development, improving maintainability, and ensuring high availability of integration services.'
+                },
+                {
                     title: 'Associate Software Engineer',
                     company: 'SHL India Pvt. Ltd',
                     location: 'Gurugram',
-                    date: 'Oct 2023 - Present',
+                    date: 'Oct 2023 - Feb 2025',
                     details: [
                         'Played a key role in CASPER, a critical backend microservice that supports core APIs essential for frontend functionality.',
                         'Demonstrated expertise in designing and implementing high-performance REST APIs, following best practices.',
