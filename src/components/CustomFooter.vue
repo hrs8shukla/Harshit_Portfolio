@@ -3,7 +3,7 @@
         <div class="top mb-5">
             <div class="logo-container col-12 col-md-9 p-0 mb-5 mb-md-0">
                 <div class="d-flex justify-content-center align-items-center mt-3 button-email-container">
-                    <a :href="process.env.VUE_APP_RESUME_URL" title="Download Resume" target="_blank" download>
+                    <a :href="resumeUrl" title="Download Resume" target="_blank" download>
                         <button class="download-btn">
                             Download Resume
                         </button>
@@ -38,6 +38,17 @@
         <div class="red-line"></div>
     </footer>
 </template>
+
+<script>
+export default {
+    name: 'CustomFooter',
+    computed: {
+        resumeUrl() {
+            return process.env.VUE_APP_RESUME_URL;
+        }
+    }
+};
+</script>
 
 <style lang="scss">
 .custom-footer {
