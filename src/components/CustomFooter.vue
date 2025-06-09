@@ -3,12 +3,7 @@
         <div class="top mb-5">
             <div class="logo-container col-12 col-md-9 p-0 mb-5 mb-md-0">
                 <div class="d-flex justify-content-center align-items-center mt-3 button-email-container">
-                    <a
-                        href="https://drive.google.com/file/d/1Ub09OG1AE1JuBcOTMU5ZsPtf9ffykZbZ/view?usp=sharing"
-                        title="Download Resume"
-                        target="_blank"
-                        download
-                    >
+                    <a :href="process.env.VUE_APP_RESUME_URL" title="Download Resume" target="_blank" download>
                         <button class="download-btn">
                             Download Resume
                         </button>
